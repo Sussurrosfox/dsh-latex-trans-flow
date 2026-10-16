@@ -1,0 +1,5 @@
+- insert:
+    - id: latex-trans-flow
+      name: '@local/latex-trans-flow'
+      config:
+        pythonPath: 'python'

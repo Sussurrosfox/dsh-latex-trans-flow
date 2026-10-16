@@ -1,0 +1,29 @@
+{
+  "name": "@local/latex-trans-flow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LaTeX 专著/教材中译与结构化流水线插件 (Amann 经验复盘通用化版：五层架构 + 7步标准流水线 + 36项工程经验红线 + 零信任质量门禁)",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "scripts",
+    "flow.md",
+    "README.md",
+    "SKILL.md",
+    "api_config.template.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

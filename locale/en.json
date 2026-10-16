@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "LaTeX Translation & Restructuring Pipeline",
+    "description": "Automated pipeline for translating and restructuring mathematical treatises and textbooks, featuring a 5-layer model, 7-step standard workflow, 36 golden rules, and zero-trust quality gates."
+  }
+}

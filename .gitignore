@@ -1,0 +1,61 @@
+# Sensitive configuration
+api_config.json
+*.env
+*.env.*
+*.secret
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+*.spec
+
+# Node dependencies & logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# General logs & temp files
+*.log
+logs/
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# LaTeX auxiliary & intermediate build files
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ind
+*.ilg
+*.toc
+*.lot
+*.lof
+*.out
+*.synctex.gz
+*.synctex
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*-blx.bib
+*.xdv
+*.dvi
+
+# Editor / IDE configuration
+.vscode/
+.idea/
+*.swp
+*~

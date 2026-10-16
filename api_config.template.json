@@ -1,0 +1,43 @@
+{
+  "_comment": "LaTeX 专著/教材中译与结构化流水线 LLM API 配置文件。请填入兼容 OpenAI 接口标准的 base_url、api_key 与 model",
+  "base_url": "https://api.deepseek.com/v1",
+  "api_key": "YOUR_API_KEY_HERE",
+  "model": "deepseek-chat",
+  "temperature": 0.1,
+  "max_tokens": 8192,
+  "timeout": 300,
+  "_providers_guide": {
+    "DeepSeek (推荐·数学代码首选·超高性价比)": {
+      "base_url": "https://api.deepseek.com/v1",
+      "model": "deepseek-chat",
+      "reasoning_model": "deepseek-reasoner",
+      "note": "极佳的数学公式保持力与 LaTeX 语法遵循度，翻译与复核首选"
+    },
+    "OpenAI (官方原厂)": {
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-4o",
+      "mini_model": "gpt-4o-mini",
+      "note": "通用推理能力强，需稳定的海外网络连通"
+    },
+    "Moonshot Kimi (月之暗面)": {
+      "base_url": "https://api.moonshot.cn/v1",
+      "model": "moonshot-v1-32k",
+      "note": "长上下文处理能力出色，国内直连"
+    },
+    "Zhipu GLM (智谱开放平台)": {
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4-plus",
+      "note": "国内直连，高并发稳定"
+    },
+    "Aliyun DashScope (通义千问)": {
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen-plus",
+      "note": "阿里云兼容 OpenAI 模式"
+    }
+  },
+  "_instructions": [
+    "1. 将上面的 api_key 替换为您在服务商后台申请的真实 Key (例如 sk-xxxx)；",
+    "2. 如使用 DeepSeek，保持默认的 base_url 与 model 即可直接运行；",
+    "3. 配置保存后，在控制台运行 `/textrans run test_api` 或调用 `latex_trans_pipeline(action='test_api')` 即可测试连通性。"
+  ]
+}
